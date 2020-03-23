@@ -21,6 +21,7 @@ def perceptron_learning(data, labels):
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ax.grid()
+    ax.set_title("Perceptron döntési felület")
     plt.scatter(train_data[:, 1], train_data[:, 2])
     x = np.linspace(-5, 5, 50)
     m = (a[1] - a[0]) / (c[1] - c[0])
